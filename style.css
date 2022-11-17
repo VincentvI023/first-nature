@@ -1,0 +1,116 @@
+/*!
+Theme Name: Cross Pro
+Theme URI: http://vincentvaningen.nl
+Author: Vincent
+Author URI: http://vincentvaningen.nl
+Description: Custom Wordpress theme
+Version: 2.0.3
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cross_pro
+*/
+
+/*==========================*/
+/*          CSS vars          */
+
+:root {
+  /* Font */
+  --normal-font: "Source Sans Pro", sans-serif;
+  /* Colors */
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --dark: #262626;
+  /* Font size */
+  --normal-fontsize: 16px;
+  --h1-fontsize: 50px;
+  --h2-fontsize: 45px;
+  --h3-fontsize: 40px;
+}
+
+body {
+  font-family: var(--normal-font);
+  font-size: var(--normal-fontsize);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: rgb(247, 0, 0);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(247, 0, 0);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: rgb(247, 0, 0);
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+/*  Normale section met padding */
+.normal-section {
+  position: relative;
+  padding: 70px 0 40px;
+}
+
+.h-white {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  font-size: 43px;
+}
+
+.h-black {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  position: relative;
+  font-size: 43px;
+  padding: 20px 0;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*==========================*/
+/*        Normal Page       */
+/*==========================*/
+.page-text {
+  color: #333;
+  font-family: var(--normal-font);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 18px;
+  padding: 40px 20px;
+}
+
+.wp-block-image img {
+  border-radius: 15px;
+  max-height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.section-space {
+  margin: 50px 0px;
+}

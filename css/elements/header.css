@@ -1,0 +1,147 @@
+/*==========================*/
+/*         Navbar           */
+/*==========================*/
+
+.navbar-custom {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  z-index: 3;
+  background: var(--dark);
+}
+
+ul#menu-header li a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+ul#menu-header li a {
+  font-family: var(--normal-font);
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+  color: var(--white);
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+/* Color Bootstrap hamburger menu */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* current page color menu */
+li.current-menu-item a,
+li.current_page_item a {
+  text-decoration: none;
+  /* Change color */
+  color: #333;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.navbar-brand a:visited {
+  color: #ffffff;
+}
+
+nav a.navbar-logo img {
+  width: 160px;
+  height: auto;
+  padding: 5px 0;
+}
+
+#wpadminbar {
+  background: #000000 !important;
+}
+
+/*==========================*/
+/*       	Header image     		*/
+/*==========================*/
+.banner-image {
+  height: 450px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 0px;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*  Default image banner */
+.banner-default-image {
+  background: url("https://vincentvaningen.nl/wp-content/uploads/banner-home-page.jpg");
+  height: 450px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 0px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.82);
+  opacity: 0.6;
+  position: absolute;
+}
+
+.banner-content {
+  z-index: 1;
+}
+
+.banner-content h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.banner-content h2 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.banner-content h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.banner-content {
+  text-align: center;
+}

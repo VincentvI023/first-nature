@@ -1,0 +1,58 @@
+/*==========================*/
+/*       Media queries      */
+/*==========================*/
+
+/* kleiner als 1200px */
+@media screen and (max-width: 1200px) {
+}
+
+/* kleiner als 992px */
+@media screen and (max-width: 992px) {
+  ul#menu-header li a {
+    font-family: var(--normal-font);
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 15px 5px;
+  }
+  /* Footer */
+  .footer-contact {
+    margin-top: 40px;
+  }
+  .contact-list li img {
+    margin-right: 10px;
+  }
+  .footer-logo {
+    text-align-last: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .text-img .col-lg-6:first-child {
+    order: 2;
+  }
+  .text-img .col-lg-6:last-child {
+    order: 1;
+  }
+  footer .footer-logo {
+    text-align: left;
+  }
+}
+
+/* kleiner als 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* kleiner als 576px */
+@media screen and (max-width: 576px) {
+}
+
+/* Kleiner als 375 iPhone 6 */
+@media screen and (max-width: 576px) {
+}
+
+/* Kleiner als 320 iPhone 5, SE */
+@media screen and (max-width: 320px) {
+}

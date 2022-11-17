@@ -1,0 +1,32 @@
+{
+  "name": "vvi/cross-pro",
+  "type": "project",
+  "license": "proprietary",
+  "description": "wordpress theme",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {},
+  "scripts": {
+    "test": [
+      "@test:composer",
+      "@test:psalm"
+    ],
+    "test:composer": [
+      "composer validate"
+    ],
+    "test:psalm": [
+      "./vendor/bin/psalm"
+    ],
+    "test:psalm-taint": [
+      "./vendor/bin/psalm --taint-analysis"
+    ]
+  },
+  "require-dev": {
+    "vimeo/psalm": "^4.27",
+    "humanmade/psalm-plugin-wordpress": "^2.0"
+  }
+}
