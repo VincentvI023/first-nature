@@ -17,9 +17,9 @@ Text Domain: cross_pro
   /* Font */
   --normal-font: "Source Sans Pro", sans-serif;
   /* Colors */
-  --blue: #1e90ff;
   --white: #ffffff;
   --dark: #262626;
+  --orange: #ff8c00;
   /* Font size */
   --normal-fontsize: 16px;
   --h1-fontsize: 50px;
@@ -113,4 +113,27 @@ a:focus {
 
 .section-space {
   margin: 50px 0px;
+}
+
+/* Buttons */
+.orange-button,
+.orange-button:visited {
+  border: 3px solid var(--orange);
+  background-color: rgba(255, 255, 255, 0.726);
+  color: var(--orange);
+  font-weight: 600;
+  padding: 10px 26px;
+  text-decoration: none;
+  border-radius: 0px;
+  font-size: 19px;
+  transition: 0.3s ease-in-out;
+}
+
+.orange-button:hover {
+  background-color: var(--orange);
+  color: #fff;
+  /* padding: 10px 26px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 19px; */
 }

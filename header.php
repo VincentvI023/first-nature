@@ -15,4 +15,4 @@
 
 
 <?php include 'template-parts/menu.php'; ?>
-<?php include 'template-parts/banner.php'; ?>
+<?php //include 'template-parts/banner.php'; ?>

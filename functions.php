@@ -27,8 +27,10 @@
 		wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
 		wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
 		wp_enqueue_style( 'media-queries', get_template_directory_uri() . '/css/media-queries.css' );
+		wp_enqueue_style( 'scrolling', get_template_directory_uri() . '/css/scrolling-effects.css' );
 		wp_enqueue_style( 'elements-header', get_template_directory_uri() . '/css/elements/header.css' );
 		wp_enqueue_style( 'elements-footer', get_template_directory_uri() . '/css/elements/footer.css' );
+		wp_enqueue_style( 'standard-page', get_template_directory_uri() . '/css/elements/standard-page.css' );
 		wp_enqueue_style( 'cross_pro-style', get_stylesheet_uri() );
 	}
 	add_action( 'wp_enqueue_scripts', 'cross_pro_enqueue_styles');
