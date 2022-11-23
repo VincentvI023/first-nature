@@ -1,5 +1,4 @@
 <footer>
-  <?php include 'template-parts/big-footer.php'; ?>
   <div class="sub-footer">
       <div class="container">
           <div class="copyright-text">

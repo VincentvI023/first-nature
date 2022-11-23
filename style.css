@@ -10,16 +10,40 @@ License URI: LICENSE
 Text Domain: cross_pro
 */
 
+@font-face {
+  font-family: "Ubuntu Condensed";
+  src: url("/wp-content/themes/first-nature/css/fonts/UbuntuCondensed-Regular.woff2")
+      format("woff2"),
+    url("/wp-content/themes/first-nature/css/fonts/UbuntuCondensed-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/wp-content/themes/first-nature/css/fonts/Ubuntu-Medium.woff2")
+      format("woff2"),
+    url("/wp-content/themes/first-nature/css/fonts/Ubuntu-Medium.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*==========================*/
-/*          CSS vars          */
+/*          CSS vars        */
 
 :root {
   /* Font */
-  --normal-font: "Source Sans Pro", sans-serif;
+  --heading-font: "Ubuntu Condensed", sans-serif;
+  --normal-font: "Ubuntu", sans-serif;
   /* Colors */
   --white: #ffffff;
   --dark: #262626;
-  --orange: #ff8c00;
+  --orange: #fe9e41;
+  --green: #7b9e7e;
   /* Font size */
   --normal-fontsize: 16px;
   --h1-fontsize: 50px;
@@ -38,7 +62,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 500;
+  font-family: var(--heading-font);
 }
 
 /* Links */
@@ -54,11 +79,11 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-  color: rgb(247, 0, 0);
+  color: var(--green);
 }
 
-a:focus {
-  outline: thin dotted;
+a:focus-visible {
+  outline: solid var(--orange);
 }
 
 /*  Normale section met padding */
@@ -119,7 +144,7 @@ a:focus {
 .orange-button,
 .orange-button:visited {
   border: 3px solid var(--orange);
-  background-color: rgba(255, 255, 255, 0.726);
+  background-color: #ffffffdb;
   color: var(--orange);
   font-weight: 600;
   padding: 10px 26px;
@@ -132,8 +157,4 @@ a:focus {
 .orange-button:hover {
   background-color: var(--orange);
   color: #fff;
-  /* padding: 10px 26px;
-  text-decoration: none;
-  border-radius: 3px;
-  font-size: 19px; */
 }
