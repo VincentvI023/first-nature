@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <section class="img-section" style="background-image: url('/wp-content/themes/first-nature/img/poppetjes-img.jpg');">
     <div class="container-fluid align-self-center">
         <div class="section-content-middle">
@@ -59,7 +58,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="text-content">
-                    <p>adipiscing elit. Phasellus pulvinar nisl a lectus faucibus maximus et sed quam. Vivamus orci nunc, condimentum sit amet lorem consequat, tempus volutpat nibh. Donec a sollicitudin est. Sed egestas lobortis suscipit. Nullam pretium eleifend turpis, in suscipit velit fringilla vitae. In iaculis eros risus, nec interdum ante scelerisque et. Cras vitae orci non mauris ultricies cursus. Mauris accumsan aliquam cursus. Curabitur porta, ante quis cursus scelerisque, ante mauris commodo nisl, nec venenatis sem metus ac arcu. Morbi eget arcu interdum, ultricies lacus ut, blandit justo.Maecenas nec bibendum orci.  </p>
+                    <p>De aangemelde persoon is een jongen of man vanaf 9 jaar. Het draait echter niet alleen om de jongen of de man die aangemeld is, maar er is juist ook aandacht voor de grotere lijnen binnen het gezin, de school of zijn werk. </p>
                 </div>
             </div>
         </div>
