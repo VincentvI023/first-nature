@@ -60,7 +60,7 @@
 /* section-img */
 .img-section {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,7 +113,6 @@
 /* Text section */
 .text-section {
   width: 100%;
-  height: 100vh;
   background-color: var(--light-background);
   color: #000000;
   padding: 40px;
@@ -124,10 +123,11 @@
 }
 
 .text-section .col-lg-6 {
-  height: 100vh;
+  min-height: 80vh;
+  padding: 250px 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   align-content: center;
 }
@@ -135,19 +135,36 @@
 .orange-text-title {
   color: var(--orange);
   font-size: 6rem;
+  text-align: right;
+  margin-right: 70px;
 }
 
 .green-line {
   background-color: var(--green);
   height: 30vh;
   width: 9px;
-  margin-left: 60px;
   border-radius: 4px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.text-section .text-content {
+  margin-left: 70px;
 }
 
 .text-content p {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.text-section a {
+  margin-top: 15px;
+  display: inline-block;
+  position: absolute;
 }
 
 section.img-section .button-row {
@@ -247,10 +264,14 @@ section.img-section .button-row a {
 }
 
 section.video-banner {
-  height: 100vh;
+  height: 80vh;
   background-image: url("/wp-content/themes/first-nature/img/poppetjes-img.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.hero.img-section {
+  height: 80vh;
 }
 
 @keyframes pulse {
@@ -263,4 +284,8 @@ section.video-banner {
   100% {
     box-shadow: 0 0 0 0 hsla(24, 37%, 69%, 0);
   }
+}
+
+.hero-content-page {
+  margin-top: 250px;
 }

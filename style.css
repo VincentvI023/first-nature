@@ -67,6 +67,18 @@ h6 {
   font-family: var(--heading-font);
 }
 
+h1 {
+  font-size: var(--h1-fontsize);
+}
+
+h2 {
+  font-size: var(--h2-fontsize);
+}
+
+h3 {
+  font-size: var(--h3-fontsize);
+}
+
 /* Links */
 a {
   color: rgb(247, 0, 0);
@@ -158,4 +170,8 @@ a:focus-visible {
 .orange-button:hover {
   background-color: var(--orange);
   color: #fff;
+}
+
+span.text-green {
+  color: var(--green);
 }

@@ -35,6 +35,6 @@ if( have_rows('blocks') ):
             get_template_part( 'blocks/block', 'text-only-block' );
         endif;
     endwhile;
-endif; 
+endif;
 
 get_footer() ?>

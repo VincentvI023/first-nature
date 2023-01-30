@@ -20,7 +20,7 @@
                 "layout_61c452e2507f6": {
                     "key": "layout_61c452e2507f6",
                     "name": "text-section",
-                    "label": "Tekst section",
+                    "label": "link titel | rechts tekst",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -78,6 +78,111 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_63d7ddae6b772",
+                            "label": "Afbeelding als achtergrond",
+                            "name": "img_as_background",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Afbeelding als achtergrond",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_63d7dddb6b773",
+                            "label": "Achtergrond afbeelding",
+                            "name": "background_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_63d7ddae6b772",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_63d7de066b774",
+                            "label": "Titel kleur",
+                            "name": "title_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_63d7ddae6b772",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#fe9e41",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_63d7de2c6b775",
+                            "label": "Tekst kleur",
+                            "name": "text_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_63d7ddae6b772",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#000000",
+                            "enable_opacity": 0,
+                            "return_format": "string"
                         }
                     ],
                     "min": "0",
@@ -86,7 +191,7 @@
                 "layout_6388a21351fc5": {
                     "key": "layout_6388a21351fc5",
                     "name": "img-section",
-                    "label": "Afbeelding section",
+                    "label": "achtergrond afbeelding | links tekst",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -177,7 +282,7 @@
                 "layout_6388a410ea3b7": {
                     "key": "layout_6388a410ea3b7",
                     "name": "img-button-section",
-                    "label": "Afbeelding button section",
+                    "label": "achtergrond afbeelding | midden titel, tekst en buttons",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -363,5 +468,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1669899817
+    "modified": 1675091998
 }
