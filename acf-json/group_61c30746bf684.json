@@ -394,10 +394,110 @@
                     "min": "0",
                     "max": ""
                 },
+                "layout_63d8dfdf1c529": {
+                    "key": "layout_63d8dfdf1c529",
+                    "name": "reviews-section",
+                    "label": "achtergrond afbeelding | reviews",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63d8dfdf1c52a",
+                            "label": "Afbeelding",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_63d8dffd1c52f",
+                            "label": "Reviews",
+                            "name": "reviews",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 1,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Nieuwe review",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63d8e0101c530",
+                                    "label": "Naam + leeftijd",
+                                    "name": "naam",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63d8dffd1c52f"
+                                },
+                                {
+                                    "key": "field_63d8e03b1c531",
+                                    "label": "Tekst",
+                                    "name": "tekst",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "parent_repeater": "field_63d8dffd1c52f"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "0",
+                    "max": ""
+                },
                 "layout_61faab06d630e": {
                     "key": "layout_61faab06d630e",
                     "name": "text_block",
-                    "label": "Tekst block",
+                    "label": "titel | tekst ",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -468,5 +568,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675091998
+    "modified": 1675157787
 }

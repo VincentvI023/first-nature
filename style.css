@@ -37,6 +37,7 @@ Text Domain: cross_pro
 
 :root {
   /* Font */
+  font-size: 18px;
   --heading-font: "Ubuntu Condensed", sans-serif;
   --normal-font: "Ubuntu", sans-serif;
   /* Colors */
@@ -53,7 +54,7 @@ Text Domain: cross_pro
 }
 
 body {
-  font-family: var(--normal-font);
+  font-family: var(--heading-font);
   font-size: var(--normal-fontsize);
 }
 
@@ -165,6 +166,13 @@ a:focus-visible {
   border-radius: 0px;
   font-size: 19px;
   transition: 0.3s ease-in-out;
+}
+
+.button-row .orange-button {
+  padding: 16px 40px;
+  text-decoration: none;
+  border-radius: 0px;
+  font-size: 22px;
 }
 
 .orange-button:hover {
