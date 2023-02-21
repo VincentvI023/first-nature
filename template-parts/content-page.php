@@ -21,6 +21,8 @@ if( have_rows('blocks') ):
             get_template_part( 'blocks/block', 'img-button-section' ); 
         elseif( get_row_layout() == 'text_block'):
             get_template_part( 'blocks/block', 'text-only-block' );
+        elseif( get_row_layout() == 'three-img-section'):
+            get_template_part( 'blocks/block', 'three-img-section' );
         elseif( get_row_layout() == 'reviews-section'):
             get_template_part( 'blocks/block', 'review-section' );
         endif;

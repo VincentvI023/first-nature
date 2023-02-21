@@ -76,11 +76,12 @@
 
 .content-box {
   height: auto;
-  background-color: rgba(255, 255, 255, 0.826);
-  color: #000000;
+  background-color: rgb(255 255 255 / 50%);
   padding: 35px 50px;
   margin-left: -10px;
   text-align: center;
+  color: #000;
+  border-radius: 0 2px 2px 0;
 }
 
 .section-middle {
@@ -264,14 +265,14 @@ section.img-section .button-row a {
 }
 
 section.video-banner {
-  height: 80vh;
+  height: 100vh;
   background-image: url("/wp-content/themes/first-nature/img/poppetjes-img.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 .hero.img-section {
-  height: 80vh;
+  height: 100vh;
 }
 
 @keyframes pulse {
@@ -321,4 +322,20 @@ section.video-banner {
 .img-section h2,
 .img-section .button-row {
   text-align: center;
+}
+
+.three-images .col-sm-4 {
+  background-size: cover;
+  height: 900px;
+  background-position: center;
+}
+
+.three-img-title {
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  left: 0;
+  right: 0;
+  margin-top: 40px;
+  font-size: 4rem;
 }

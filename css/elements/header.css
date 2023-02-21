@@ -17,7 +17,7 @@ ul#menu-header li a:hover {
 }
 
 ul#menu-header li a {
-  font-family: var(--normal-font);
+  font-family: var(--heading-font);
   font-weight: normal;
   font-size: 22px;
   text-align: left;
