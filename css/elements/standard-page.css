@@ -342,7 +342,7 @@ section.video-banner {
 /* Review block */
 .review {
   color: #fff;
-  text-align: left;
+  text-align: justify;
   padding: 10px 40px 0 10px;
   border-radius: 3px;
 }
