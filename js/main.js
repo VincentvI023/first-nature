@@ -45,7 +45,7 @@ onYouTubeIframeAPIReady = function () {
 	});
 };
 
-// Button underline animation
+// Title link underline animation
 document.addEventListener('DOMContentLoaded', function () {
 	var elements = document.querySelectorAll('.orange-img-title.underline-animation');
 	var windowHeight = window.innerHeight;
