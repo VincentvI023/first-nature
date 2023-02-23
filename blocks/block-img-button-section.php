@@ -12,7 +12,7 @@ $button = get_sub_field('button');
                 <?php if ( have_rows('buttons') ) : ?>
                     <?php while( have_rows('buttons') ) : the_row(); ?>
                     <?php $button = get_sub_field('button'); ?>
-                        <a href="<?php echo $button['url']; ?>" data-aos="fade-up" data-aos-offset="300" class="orange-button" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a>
+                        <a href="<?php echo $button['url']; ?>" data-aos="fade-up" data-aos-offset="150" class="orange-button" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a>
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>

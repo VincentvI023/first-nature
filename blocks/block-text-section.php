@@ -16,10 +16,10 @@ endif;
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="orange-text-title" data-aos="fade-right"><?php the_sub_field('title'); ?></h2>
-                <div class="green-line"></div>
+                <div class="green-line" data-aos="fade-up" data-aos-delay="450"></div>
             </div>
             <div class="col-lg-6">
-                <div class="text-content" data-aos="fade-left">
+                <div class="text-content" data-aos="fade-left" data-aos-delay="200">
                     <?php 
                     the_sub_field('text');
                     if ($button) : ?>

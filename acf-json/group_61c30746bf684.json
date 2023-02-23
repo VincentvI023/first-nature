@@ -240,6 +240,50 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63f4cf147033f",
+                            "label": "Link toevoegen aan titel",
+                            "name": "link_toevoegen_aan_titel",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_63f4cef57033e",
+                            "label": "Titel link",
+                            "name": "title_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_63f4cf147033f",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
                             "key": "field_6388a21351fc8",
                             "label": "Tekst",
                             "name": "text",
@@ -673,5 +717,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675173540
+    "modified": 1676989160
 }

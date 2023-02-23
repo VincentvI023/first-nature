@@ -29,7 +29,7 @@
         <div class="col-md-6">
             <div class="logo-footer">
               <h2 class="logo-text">First Nature</h2>
-              <img src="http://firstnaturenl.local/wp-content/themes/first-nature/img/first-nature-groen.png" class="logo-img" alt="Logo First Nature ">
+              <img src="/wp-content/themes/first-nature/img/first-nature-groen.png" class="logo-img" alt="Logo First Nature ">
             </div>
           </div>
         </div>
@@ -55,6 +55,7 @@
 
 <script>
   AOS.init();
+  
 </script>
 
 </body>

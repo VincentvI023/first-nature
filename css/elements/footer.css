@@ -14,9 +14,9 @@
 /* Footer */
 .big-footer {
   background-color: var(--light-background);
-  padding: 40px 0;
+  padding: 60px 0;
   border-top: 3px solid var(--green);
-  background-image: url(http://firstnaturenl.local/wp-content/themes/first-nature/img/first-nature-groen.png);
+  background-image: url(/wp-content/themes/first-nature/img/first-nature-groen-light.png);
   background-repeat: no-repeat;
   background-position: -170px -62px;
   background-size: 530px;
