@@ -6,6 +6,10 @@
   color: #fff;
 }
 
+.contact-info-bar h4 {
+  margin-bottom: 0;
+}
+
 .contact-info-bar h4 a {
   margin-bottom: 0;
   font-size: 26px;
