@@ -2,14 +2,14 @@
   <div class="contact-info-bar">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 order order-lg-1 order-sm-2">
           <?php $phone = get_field('telefoonnummer', 'option'); ?>
           <h4><a href="tel:<?php echo antispambot( $phone ); ?>"><?php echo antispambot( $phone ); ?></a></h4>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 order-lg-2 order-sm-1">
           <h4>- Contact -</h4>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 order-lg-3 order-sm-3">
           <?php $email = get_field('emailadres', 'option');?> 
           <h4><a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a></h4>
         </div>

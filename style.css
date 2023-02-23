@@ -168,11 +168,18 @@ a:focus-visible {
   transition: 0.3s ease-in-out;
 }
 
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .button-row .orange-button {
   padding: 16px 40px;
   text-decoration: none;
   border-radius: 0px;
   font-size: 22px;
+  margin-top: 10px;
 }
 
 .orange-button:hover {

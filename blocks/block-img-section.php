@@ -10,7 +10,7 @@ $title_link = get_sub_field('title_link');
         <div class="section-middle">
             <?php if($title_link): ?>
                 <a href="<?php echo $title_link['url']; ?>" target="<?php echo $title_link['target']; ?>">
-                    <h2 class="orange-img-title underline-animation" data-aos="fade-up" data-aos-delay="2000"><?php the_sub_field('title'); ?></h2>
+                    <h2 class="orange-img-title underline-animation" data-aos="fade-up"><?php the_sub_field('title'); ?></h2>
                 </a>
             <?php else: ?>
                 <h2 class="orange-img-title" data-aos="fade-up"><?php the_sub_field('title'); ?></h2>
