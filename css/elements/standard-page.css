@@ -141,7 +141,7 @@
   position: absolute;
   width: 100%;
   height: 6px;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   background-color: var(--green);
   visibility: hidden;
@@ -221,8 +221,8 @@ section.img-section .button-row {
 }
 
 section.img-section .button-row a {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 /* Youtube embeded */

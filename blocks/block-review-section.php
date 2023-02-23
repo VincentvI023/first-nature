@@ -13,8 +13,8 @@ $button = get_sub_field('button');
                     <?php while( have_rows('reviews') ) : the_row();
                         $name = get_sub_field('naam');
                         $text = get_sub_field('tekst'); 
-                    ?>
-                        <div class="col-lg-4" data-aos="fade-up">
+                    if(get_row_index() == 3){ ?><div class="col-lg-4"></div><?php } ?>
+                        <div class="col-lg-4 " data-aos="fade-up">
                             <div class="review">
                                 <p class="review-name"><?php echo $name; ?>:</p>
                                 <p><?php echo $text; ?></p>

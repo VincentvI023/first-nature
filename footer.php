@@ -7,7 +7,6 @@
           <h4><a href="tel:<?php echo antispambot( $phone ); ?>"><?php echo antispambot( $phone ); ?></a></h4>
         </div>
         <div class="col-md-4 order-lg-2 order-sm-1">
-          <h4>Contact</h4>
         </div>
         <div class="col-md-4 order-lg-3 order-sm-3">
           <?php $email = get_field('emailadres', 'option');?> 
