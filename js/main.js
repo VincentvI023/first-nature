@@ -1,9 +1,4 @@
-// YouTube embeded video
-// Get element
 var youtubeEmbedElement = document.getElementById("youtubeEmbed");
-console.log(youtubeEmbedElement);
-
-// Add YouTube API script
 var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
@@ -52,35 +47,51 @@ onYouTubeIframeAPIReady = function () {
 
 // Button underline animation
 document.addEventListener('DOMContentLoaded', function () {
-	// Detect when the element is in the viewport
-	var animation_elements = document.querySelectorAll('.underline-animation');
-	var window_height = window.innerHeight;
+	var elements = document.querySelectorAll('.orange-img-title.underline-animation');
+	var windowHeight = window.innerHeight;
 
-	function check_if_in_view() {
-		var window_top_position = window.pageYOffset;
-		var window_bottom_position = (window_top_position + window_height);
+	function checkIfInView(element) {
+		var windowTopPosition = window.pageYOffset;
+		var windowBottomPosition = (windowTopPosition + windowHeight);
 
-		for (var i = 0; i < animation_elements.length; i++) {
-			var element = animation_elements[i];
-			var element_height = element.offsetHeight;
-			var element_top_position = element.offsetTop;
-			var element_bottom_position = (element_top_position + element_height);
+		var elementHeight = element.offsetHeight;
+		var elementTopPosition = element.offsetTop;
+		var elementBottomPosition = (elementTopPosition + elementHeight);
 
-			// If the element is in the viewport, add the "visible" class after a 2 second delay
-			if ((element_bottom_position >= window_top_position + 200) &&
-				(element_top_position <= window_bottom_position)) {
-				setTimeout(function () {
-					element.classList.add('visible');
-				}, 2000);
+		// Voeg "visible" klasse toe als het element in het zicht is en de timeout is verlopen
+		if ((elementBottomPosition >= windowTopPosition + 200) &&
+			(elementTopPosition <= windowBottomPosition)) {
+			setTimeout(function () {
+				element.classList.add('visible');
+			}, 2000);
+		}
+	}
+
+	function checkAnimationElements() {
+		// Loop door alle elementen en controleer of ze in het zicht zijn
+		for (var i = 0; i < elements.length; i++) {
+			var element = elements[i];
+
+			// Controleer of het element nog niet zichtbaar is
+			if (!element.classList.contains('visible')) {
+				checkIfInView(element);
 			}
 		}
 	}
 
-	window.addEventListener('scroll', check_if_in_view);
-	window.addEventListener('resize', function () {
-		window_height = window.innerHeight;
-	});
+	function onScroll() {
+		checkAnimationElements();
+	}
 
-	// Check if any elements are already in view on page load
-	check_if_in_view();
+	function onResize() {
+		windowHeight = window.innerHeight;
+		checkAnimationElements();
+	}
+
+	// Voer check uit als de pagina laadt
+	checkAnimationElements();
+
+	// Luister naar scroll- en resize-evenementen
+	window.addEventListener('scroll', onScroll);
+	window.addEventListener('resize', onResize);
 });

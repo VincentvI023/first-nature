@@ -134,6 +134,7 @@
 .underline-animation {
   position: relative;
   text-decoration: none;
+  text-shadow: 3px 1px 8px #00000047;
 }
 
 .underline-animation:hover::after {
