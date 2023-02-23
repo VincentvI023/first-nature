@@ -3,97 +3,10 @@
     "title": "Opties",
     "fields": [
         {
-            "key": "field_61b47589f8f80",
-            "label": "Footer logo",
-            "name": "footer_logo",
-            "type": "image",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_61b475aef8f81",
-            "label": "Footer tekst",
-            "name": "footer_tekst",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_61b475b7f8f82",
-            "label": "Facebook link",
-            "name": "facebook_link",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url"
-        },
-        {
-            "key": "field_61b475e1f8f83",
-            "label": "Instagram link",
-            "name": "instagram_link",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url"
-        },
-        {
-            "key": "field_61b475fcf8f84",
-            "label": "Whatsapp link",
-            "name": "whatsapp_link",
-            "type": "link",
-            "instructions": "Deze link wordt ook gebruikt voor het whatsapp logo wat altijd in beeld is.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url"
-        },
-        {
             "key": "field_61b49332402d3",
             "label": "Emailadres",
             "name": "emailadres",
+            "aria-label": "",
             "type": "email",
             "instructions": "",
             "required": 0,
@@ -112,6 +25,7 @@
             "key": "field_61b4935c402d4",
             "label": "Telefoonnummer",
             "name": "telefoonnummer",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -128,10 +42,11 @@
             "maxlength": ""
         },
         {
-            "key": "field_61b49373402d5",
-            "label": "Straat + huisnummer",
-            "name": "straat_huisnummer",
-            "type": "text",
+            "key": "field_63f7380570fe6",
+            "label": "Footer informatie",
+            "name": "footer_info",
+            "aria-label": "",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -140,49 +55,103 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_61b49387402d6",
-            "label": "Postcode",
-            "name": "postcode",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_61b4938f402d7",
-            "label": "Plaats",
-            "name": "plaats",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Nieuwe regel",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_63f7382070fe7",
+                    "label": "Item type",
+                    "name": "item_type",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63f7380570fe6"
+                },
+                {
+                    "key": "field_63f7385070fe8",
+                    "label": "Item",
+                    "name": "item",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63f7380570fe6"
+                },
+                {
+                    "key": "field_63f7387c70fea",
+                    "label": "Link toevoegen",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_63f7380570fe6"
+                },
+                {
+                    "key": "field_63f7386570fe9",
+                    "label": "Item link",
+                    "name": "item_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f7387c70fea",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_63f7380570fe6"
+                }
+            ]
         }
     ],
     "location": [
@@ -203,5 +172,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1645630755
+    "modified": 1677146285
 }

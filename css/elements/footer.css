@@ -6,9 +6,10 @@
   color: #fff;
 }
 
-.contact-info-bar h4 {
+.contact-info-bar h4 a {
   margin-bottom: 0;
   font-size: 26px;
+  color: #fff;
 }
 
 /* Footer */
