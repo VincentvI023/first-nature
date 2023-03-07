@@ -318,6 +318,26 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_640721bc99c6a",
+                            "label": "Extras: css class",
+                            "name": "css_class",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Dit veld hoeft niet ingevoerd te worden",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ],
                     "min": "0",
@@ -717,5 +737,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676989160
+    "modified": 1678189117
 }

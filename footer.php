@@ -43,10 +43,14 @@
           </div>
         </div>
         <div class="col-md-6">
+          <a href="#">
             <div class="logo-footer">
-              <h2 class="logo-text">First Nature</h2>
-              <img src="/wp-content/themes/first-nature/img/first-nature-groen.png" class="logo-img" alt="Logo First Nature ">
+              
+                <h2 class="logo-text">First Nature</h2>
+                <img src="/wp-content/themes/first-nature/img/first-nature-groen.png" class="logo-img" alt="Logo First Nature ">
+              
             </div>
+            </a>
           </div>
         </div>
       </div>

@@ -82,8 +82,8 @@
         },
         {
             "key": "field_63863b844ad07",
-            "label": "Button",
-            "name": "video_banner_button",
+            "label": "Link",
+            "name": "video_banner_link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -115,5 +115,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1669897951
+    "modified": 1678189619
 }

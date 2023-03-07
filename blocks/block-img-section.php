@@ -1,11 +1,11 @@
 <?php 
-$image = get_sub_field('image'); 
-$button = get_sub_field('button');
-$title_link = get_sub_field('title_link');
+    $image = get_sub_field('image'); 
+    $button = get_sub_field('button');
+    $title_link = get_sub_field('title_link'); 
 ?>
 
 
-<section class="img-section" style="background-image: url('<?php echo $image; ?>');">
+<section class="img-section <?php the_sub_field('css_class'); ?>" style="background-image: url('<?php echo $image; ?>');">
     <div class="container-fluid align-self-center">
         <div class="section-middle">
             <?php if($title_link): ?>

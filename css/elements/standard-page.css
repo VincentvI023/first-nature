@@ -111,6 +111,15 @@
   margin-top: 0;
 }
 
+.section-content-middle a,
+.section-content-middle a {
+  text-decoration: none;
+}
+
+.section-content-middle a:hover {
+  text-decoration: underline;
+}
+
 .section-content-middle h3 {
   font-size: 31px;
   margin-bottom: 20px;
@@ -314,7 +323,7 @@ section.img-section .button-row a {
 
 section.video-banner {
   height: 100vh;
-  background-image: url("/wp-content/themes/first-nature/img/poppetjes-img.jpg");
+  background-image: url("/wp-content/themes/first-nature/img/banner.png");
   background-size: cover;
   background-position: center center;
 }
@@ -337,6 +346,19 @@ section.video-banner {
 
 .hero-content-page {
   margin-top: 250px;
+}
+
+/* Last section title visible img */
+.home-img-visible h2 {
+  margin-top: -250px;
+}
+
+.header-img-about-us {
+  margin-top: 100px;
+}
+
+.page-id-15 .navbar-custom {
+  background-color: #262626;
 }
 
 /* Review block */
