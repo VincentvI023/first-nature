@@ -61,7 +61,11 @@
   div.section-middle {
     width: 100%;
   }
-
+  section.review-section {
+    height: 100%;
+    padding-bottom: 80px;
+    background-position: right;
+  }
   .site section:first-of-type {
     padding-top: 70px;
     margin-top: 100px;
@@ -78,9 +82,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .col-lg-6 .orange-text-title {
-    color: var(--orange);
-    font-size: 4.5rem;
+  section .orange-text-title {
     text-align: center;
     margin-right: 0;
   }
@@ -91,7 +93,7 @@
     right: 0;
     text-align: center;
     height: 9px;
-    margin: 30px 0;
+    margin: 33px 0 40px;
   }
   section.text-section {
     padding: 70px 0;
@@ -118,10 +120,54 @@
     margin: 10px 0;
     display: block;
   }
+  .button-row {
+    flex-direction: column;
+  }
+  .button-row a {
+    width: 100%;
+  }
+  section.img-section div.button-row a {
+    margin: 10px 0;
+  }
+  section h2.orange-text-title,
+  h2.orange-img-title {
+    color: var(--orange);
+    font-size: 3rem;
+  }
+
+  .col-lg-6 .text-content p {
+    font-size: 1.2rem;
+  }
+  div.three-images .col-md-4 {
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    display: none;
+  }
+  div.three-images .col-md-4:first-child {
+    display: block;
+  }
+  div.review {
+    padding: 5px 10px;
+  }
 }
 
 /* kleiner als 576px */
 @media screen and (max-width: 576px) {
+  div.navbar-brand-name {
+    font-size: 25px;
+    margin-left: -5%;
+  }
+  nav.navbar-custom a.navbar-logo img {
+    width: 45px;
+  }
+  div.content-box {
+    padding: 19px 0;
+    margin-left: 0;
+  }
+  div.content-box h1 {
+    font-size: 38px;
+  }
 }
 
 /* Kleiner als 375 iPhone 6 */

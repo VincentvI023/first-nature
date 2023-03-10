@@ -195,6 +195,7 @@
   font-size: 4.5rem;
   text-align: right;
   margin-right: 70px;
+  margin-bottom: 0;
 }
 
 .green-line {
@@ -390,7 +391,7 @@ section.video-banner {
   text-align: center;
 }
 
-.three-images .col-sm-4 {
+.three-images .col-md-4 {
   background-size: cover;
   height: 900px;
   background-position: center;

@@ -610,7 +610,7 @@
                             },
                             "layout": "table",
                             "min": 1,
-                            "max": 2,
+                            "max": 4,
                             "collapsed": "",
                             "button_label": "Nieuwe review",
                             "rows_per_page": 20,
@@ -737,5 +737,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678189117
+    "modified": 1678455268
 }

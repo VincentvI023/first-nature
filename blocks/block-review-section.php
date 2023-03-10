@@ -5,8 +5,10 @@ $button = get_sub_field('button');
 
 <section class="review-section" style="background-image: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), url('<?php echo $image; ?>');">
     <div class="container align-self-center text-center">
+        <?php if(get_sub_field('title')): ?>
             <h2 class="orange-img-title"><?php the_sub_field('title'); ?></h2>
             <p><?php the_sub_field('text'); ?></p>
+        <?php endif; ?>
 
             <div class="row">
                 <?php if ( have_rows('reviews') ) : ?>
